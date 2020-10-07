@@ -1,0 +1,24 @@
+:root {
+    --text-font-family: 'IBM Plex Sans', 'Helvetica', sans-serif;
+    --text-font-size: 20px;
+    --text-line-height: 26px;
+
+    --h1-font-size: 40px;
+    --h1-line-height: 120%;
+
+    --foreground-color-rgb: 0, 0, 0;
+    --foreground-color: rgb(var(--foreground-color-rgb));
+    --inactive-color: rgba(var(--foreground-color-rgb), 0.3);
+
+    --blue-accent-color-rgb: 62, 136, 223;
+    --blue-accent-color: rgb(var(--blue-accent-color-rgb));
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --text-font-size: 18px;
+        --text-line-height: 23px;
+
+        --h1-font-size: 28px;
+    }
+}

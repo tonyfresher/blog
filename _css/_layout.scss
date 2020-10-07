@@ -1,0 +1,39 @@
+.Container {
+    margin: 100px 40px;
+
+    display: grid;
+    grid-template-columns: minmax(240px, 1fr) minmax(400px, 720px) 1fr;
+}
+
+.Title-Label {
+    color: inherit;
+    text-decoration: none;
+
+    font-weight: 600;
+
+    width: max-content;
+}
+
+@media (max-width: 1200px) {
+    .Container {
+        grid-template-columns: minmax(200px, 1fr) minmax(400px, 640px) 1fr;
+    }
+}
+
+@media (max-width: 960px) {
+    .Container {
+        position: relative;
+
+        grid-template-columns: auto;
+    }
+
+    .Title {
+        position: absolute;
+    }
+}
+
+@media (max-width: 540px) {
+    .Container {
+        margin: 40px 20px;
+    }
+}

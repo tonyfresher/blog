@@ -6,15 +6,13 @@
 
     <body>
 
-    <div class="Container Content">
+    <div class="Container">
         <header class="Title">
-        <h3 class="Title-Label">
-            <a href="{{site.url}}" title="Домой">{{site.title}}</a>
-        </h3>
+            <a class="Title-Label" href="{{site.url}}" title="Домой">{{site.title}}</a>
         </header>
 
-        <main>
-        {{content}}
+        <main class="Container-Content">
+            {{content}}
         </main>
     </div>
 
