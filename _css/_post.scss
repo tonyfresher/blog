@@ -67,12 +67,15 @@
 
 @media (max-width: 960px) {
     .Post-Date {
-        align-self: flex-end;
+        position: absolute;
+        top: 0;
+        right: 0;
+
         max-width: 60%;
     }
 
     .Post-Title {
-        margin-top: 72px;
+        margin-top: 0;
     }
 
     .Post-Content {

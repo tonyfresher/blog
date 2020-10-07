@@ -1,4 +1,6 @@
 .Container {
+    position: relative;
+
     margin: 100px 40px;
 
     display: grid;
@@ -22,13 +24,11 @@
 
 @media (max-width: 960px) {
     .Container {
-        position: relative;
-
         grid-template-columns: auto;
     }
 
-    .Title {
-        position: absolute;
+    .Container-Content {
+        margin-top: 72px;
     }
 }
 
