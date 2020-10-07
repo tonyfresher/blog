@@ -4,6 +4,10 @@
 
     {%include head.html%}
 
+    {%if jekyll.environment == "production"%}
+        {%include metrika.html%}
+    {%endif%}
+
     <body>
 
     <div class="Container">
