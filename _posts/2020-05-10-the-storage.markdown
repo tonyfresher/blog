@@ -29,7 +29,7 @@ date: 2020-05-10 17:45:51 +0300
 
 [Склад](https://www.notion.so/28f3b77336bb48e5b1e97aaf1dd6a3b2?v=d99523701d0f42f8aec5f98c75381bda) — это база всего, что увидел, услышал или прочитал. Я складываю туда только то, что зацепило, что не хочу потерять. Фактически, это приложение для удобного сохранения материалов. Склад может быть таблицей из строк и колонок. Материал — строка — описывается набором свойств — колонок. Расскажу подробнее.
 
-![Overview](/assets/the-storage/overview.png)
+![Склад]({{'/assets/the-storage/overview.png' | relative_url}})
 
 **Название.** Главное свойство строки. Использую названия, по которым будет легко найти материал. Например, для книги пишу название в оригинале и русский перевод в скобках.
 
@@ -53,7 +53,7 @@ date: 2020-05-10 17:45:51 +0300
 
 ### Что внутри
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/419b70e5-0c15-4c40-b56d-3a1d142d33d9/Screenshot_2020-05-10_at_15.11.53.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/419b70e5-0c15-4c40-b56d-3a1d142d33d9/Screenshot_2020-05-10_at_15.11.53.png)
+![Страница]({{'/assets/the-storage/page.png' | relative_url}})
 
 Каждая строка — это страница. Я кладу туда выжимку статьи, конспект лекции, файл или ссылку. Но чаще оставляю её пустой. На странице доступны все возможности Ноушена. Это может быть абзац текста или ещё одна база данных. Например, для курсов часто создаю внутри список записей по лекциям.
 
@@ -65,43 +65,43 @@ date: 2020-05-10 17:45:51 +0300
 
 Обычно я добавляю, смотрю и правлю данные в представлении таблицы. Тут есть все строки и все колонки. 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0a0753a8-d7ef-4b49-9ea2-ba8e9c094310/Screenshot_2020-05-10_at_15.14.30.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0a0753a8-d7ef-4b49-9ea2-ba8e9c094310/Screenshot_2020-05-10_at_15.14.30.png)
+![Всё]({{'/assets/the-storage/all-view.png' | relative_url}})
 
 **Бэклог**
 
 Доска с тем, что я хочу посмотреть. Тут всё, кроме долговременных начинаний: курсы и книжки на отдельных досках. Группировка по типу позволяет легко выбрать статью или видео, если хочу чего-то конкретного. Колонки «несколько», «офлайн» и «пополняется» спрятаны.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2a4c90c6-8283-4be2-8704-d053948132e4/Screenshot_2020-05-10_at_15.16.06.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2a4c90c6-8283-4be2-8704-d053948132e4/Screenshot_2020-05-10_at_15.16.06.png)
+![Бэклог]({{'/assets/the-storage/backlog-view.png' | relative_url}})
 
 **Книги**
 
 Доска с группировкой по статусам, на которой есть только книги. В карточке название, авторы, о чём и оценка. Удобно смотреть, что начал читать или что прочитал за какой-то период. В книжном часто открываю колонку с бэклогом, чтобы выбрать, что купить. Не хватает сортировки по рекомендациям — пока вверху последняя добавленная книжка.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/51de3dd6-a327-4a08-9573-ac243efd4a0e/Screenshot_2020-05-10_at_15.16.30.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/51de3dd6-a327-4a08-9573-ac243efd4a0e/Screenshot_2020-05-10_at_15.16.30.png)
+![Книги]({{'/assets/the-storage/books-view.png' | relative_url}})
 
 **Курсы**
 
 Выглядит и работает так же, как доска с книгами. Удобно открывать карточки с конспектами из колонки начатых.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/784c3683-76ac-4cef-81f3-1249f0d15462/Screenshot_2020-05-10_at_15.16.45.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/784c3683-76ac-4cef-81f3-1249f0d15462/Screenshot_2020-05-10_at_15.16.45.png)
+![Курсы]({{'/assets/the-storage/courses-view.png' | relative_url}})
 
 **Лекции**
 
 Простой список с лекциями. Внутри конспекты. Отображается название, о чём и дата.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/821d1368-7c9c-4899-ba1a-eecdf6737eaa/Screenshot_2020-05-10_at_15.16.55.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/821d1368-7c9c-4899-ba1a-eecdf6737eaa/Screenshot_2020-05-10_at_15.16.55.png)
+![Лекции]({{'/assets/the-storage/lectures-view.png' | relative_url}})
 
 **Начато**
 
 Таблица с тем, что начал смотреть. Тут всё, кроме книг и курсов.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ef1e17b9-40da-48a0-808e-6e7aa4d94a26/Screenshot_2020-05-10_at_15.17.12.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ef1e17b9-40da-48a0-808e-6e7aa4d94a26/Screenshot_2020-05-10_at_15.17.12.png)
+![Начато]({{'/assets/the-storage/started-view.png' | relative_url}})
 
 **История**
 
 Календарь с материалами, которые привязаны по дню создания. Позволяет смотреть, что делал в прошедшую неделю, месяц, год. Я не всегда добавляю материал в момент просмотра, но для общей картины этого хватает.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae06f90c-8241-434d-8612-7dffdbd4f09c/Screenshot_2020-05-10_at_15.17.23.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae06f90c-8241-434d-8612-7dffdbd4f09c/Screenshot_2020-05-10_at_15.17.23.png)
+![История]({{'/assets/the-storage/history-view.png' | relative_url}})
 
 У Склада семь представлений, но я часто использую другие. За несколько секунд можно накликать подборку по теме или автору. Посмотреть всё, чему поставил сердечко, или увидеть распределение, какие оценки обычно ставлю. Такая гибкость — вау-фича Ноушена.
 
