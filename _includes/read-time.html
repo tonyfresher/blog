@@ -1,6 +1,2 @@
 {%assign words = include.content | number_of_words%}
-{%if words < 360%}
-    1 мин
-{%else%}
-    {{words | divided_by: 180}} мин
-{%endif%}
+{{words | divided_by: 180}} мин
