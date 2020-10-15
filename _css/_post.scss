@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-.Post-Date {
+.Post-Info {
     color: var(--inactive-color);
 }
 
@@ -68,7 +68,7 @@
 }
 
 @media (max-width: 960px) {
-    .Post-Date {
+    .Post-Info {
         position: absolute;
         top: 0;
         right: 0;
