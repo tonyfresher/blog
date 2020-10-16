@@ -2,21 +2,21 @@
 
 <html lang="ru">
 
-    {%include head.html%}
+    {% include head.html %}
 
-    {%if jekyll.environment == "production"%}
-        {%include metrika.html%}
-    {%endif%}
+    {% if jekyll.environment == "production" %}
+        {% include metrika.html %}
+    {% endif %}
 
     <body>
 
     <div class="Container">
         <header class="Title">
-            <a class="Title-Label" href="{{site.url}}" title="Домой">{{site.title}}</a>
+            <a class="Title-Label" href="{{ site.url }}" title="Домой">{{ site.title }}</a>
         </header>
 
         <main class="Container-Content">
-            {{content}}
+            {{ content }}
         </main>
     </div>
 
