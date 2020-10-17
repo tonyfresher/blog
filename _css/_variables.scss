@@ -6,8 +6,12 @@
     --h1-font-size: 40px;
     --h1-line-height: 120%;
 
+    --backround-color-rgb: 255, 255, 255;
+    --backround-color: rgb(var(--backround-color-rgb));
+
     --foreground-color-rgb: 0, 0, 0;
     --foreground-color: rgb(var(--foreground-color-rgb));
+
     --inactive-color: rgba(var(--foreground-color-rgb), 0.3);
 
     --blue-accent-color-rgb: 62, 136, 223;

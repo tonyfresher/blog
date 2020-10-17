@@ -10,7 +10,15 @@
 
     <body>
 
-    <div class="RootContainer">{{ content }}</div>
+    <div
+        {% if page.theme == "dark" %}
+            class="RootContainer RootContainer_theme_dark"
+        {% else %}
+            class="RootContainer RootContainer_theme_light"
+        {% endif %}
+    >
+        {{ content }}
+    </div>
 
     </body>
 </html>

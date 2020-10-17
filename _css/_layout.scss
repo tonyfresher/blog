@@ -1,5 +1,18 @@
 .RootContainer {
-    margin: 100px;
+    padding: 100px;
+
+    background: var(--backround-color);
+    color: var(--foreground-color);
+}
+
+.RootContainer_theme_dark {
+    --backround-color-rgb: 19, 19, 19;
+    --backround-color: rgb(var(--backround-color-rgb));
+
+    --foreground-color-rgb: 255, 255, 255;
+    --foreground-color: rgb(var(--foreground-color-rgb));
+
+    --inactive-color: rgba(var(--foreground-color-rgb), 0.3);
 }
 
 .Title {
@@ -13,6 +26,6 @@
 
 @media (max-width: 540px) {
     .RootContainer {
-        margin: 40px 20px;
+        padding: 40px 20px;
     }
 }
