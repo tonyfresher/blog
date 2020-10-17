@@ -1,3 +1,10 @@
+.PostContainer {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: minmax(240px, 1fr) minmax(400px, 720px) 1fr;
+}
+
 .Post {
     display: flex;
     flex-direction: column;
@@ -67,7 +74,21 @@
     width: 100%;
 }
 
+@media (max-width: 1200px) {
+    .PostContainer {
+        grid-template-columns: minmax(200px, 1fr) minmax(400px, 640px) 1fr;
+    }
+}
+
 @media (max-width: 960px) {
+    .PostContainer {
+        grid-template-columns: auto;
+    }
+
+    .Post {
+        margin-top: 72px;
+    }
+
     .Post-Info {
         position: absolute;
         top: 0;

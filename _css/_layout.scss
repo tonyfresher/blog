@@ -1,13 +1,8 @@
-.Container {
-    position: relative;
-
+.RootContainer {
     margin: 100px;
-
-    display: grid;
-    grid-template-columns: minmax(240px, 1fr) minmax(400px, 720px) 1fr;
 }
 
-.Title-Label {
+.Title {
     color: inherit;
     text-decoration: none;
 
@@ -16,24 +11,8 @@
     width: max-content;
 }
 
-@media (max-width: 1200px) {
-    .Container {
-        grid-template-columns: minmax(200px, 1fr) minmax(400px, 640px) 1fr;
-    }
-}
-
-@media (max-width: 960px) {
-    .Container {
-        grid-template-columns: auto;
-    }
-
-    .Container-Content {
-        margin-top: 72px;
-    }
-}
-
 @media (max-width: 540px) {
-    .Container {
+    .RootContainer {
         margin: 40px 20px;
     }
 }

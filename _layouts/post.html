@@ -2,33 +2,21 @@
 layout: default
 ---
 
-<article class="Post">
-    <div class="Post-Info">
-        <time datetime="{{ page.date | date_to_xmlschema }}">
-            {{ page.date | date: "%-d" }}
-            {% assign month = page.date | date: "%-m" %}
-            {% case month %}
-                {% when '1' %}янв
-                {% when '2' %}фев
-                {% when '3' %}мар
-                {% when '4' %}апр
-                {% when '5' %}мая
-                {% when '6' %}июня
-                {% when '7' %}июля
-                {% when '8' %}авг
-                {% when '9' %}сен
-                {% when '10' %}окт
-                {% when '11' %}ноя
-                {% when '12' %}дек
-            {% endcase %}
-            {{ page.date | date: "%Y" }},
-        </time>
-        <span>{% include read-time.html content=content %}</span>
-    </div>
+<div class="PostContainer">
+    {% include site-title.html %}
 
-    <h1 class="Post-Title">{{ page.title }}</h1>
+    <main>
+        <article class="Post">
+            <div class="Post-Info">
+                {% include date-string.html date=page.date %}
+                {% include read-time.html content=content %}
+            </div>
 
-    <div class="Post-Content">
-        {{ content }}
-    </div>
-</article>
+            <h1 class="Post-Title">{{ page.title }}</h1>
+
+            <div class="Post-Content">
+                {{ content }}
+            </div>
+        </article>
+    </main>
+</div>
