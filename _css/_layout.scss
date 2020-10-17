@@ -1,6 +1,9 @@
 .RootContainer {
     padding: 100px;
 
+    min-height: 100vh;
+    box-sizing: border-box;
+
     background: var(--backround-color);
     color: var(--foreground-color);
 }
