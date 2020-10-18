@@ -20,6 +20,10 @@
     <meta property="og:locale" content="ru_RU">
 
     {% if page.image %}
-        <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets{{ page.id }}/{{ page.image }}">
+        {% if page.layout == "post" %}
+            <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets{{ page.id }}/{{ page.image }}">
+        {% elsif page.layout == "book" %}
+            <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/books/{{ page.image }}">
+        {% endif %}
     {% endif %}
 </head>
