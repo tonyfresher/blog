@@ -6,6 +6,9 @@
     --h1-font-size: 40px;
     --h1-line-height: 120%;
 
+    --h2-font-size: 30px;
+    --h2-line-height: 120%;
+
     --backround-color-rgb: 255, 255, 255;
     --backround-color: rgb(var(--backround-color-rgb));
 
@@ -21,5 +24,6 @@
 @media (max-width: 1200px) {
     :root {
         --h1-font-size: 28px;
+        --h2-font-size: 28px;
     }
 }

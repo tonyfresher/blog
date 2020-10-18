@@ -7,6 +7,11 @@ url: https://tonyfresher.github.io
 baseurl: /blog
 permalink: /:categories/:title
 
+collections:
+  books:
+    output: true
+    permalink: /:title
+
 markdown: kramdown
 sass:
   sass_dir: _css

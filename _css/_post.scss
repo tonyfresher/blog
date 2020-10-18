@@ -21,6 +21,12 @@
     line-height: var(--h1-line-height);
 }
 
+.Post-Description {
+    margin-top: 8px;
+
+    color: var(--inactive-color);
+}
+
 .Post-Content > :first-child {
     margin-top: 0;
 }
@@ -72,6 +78,10 @@
 
 .Post-Content img {
     width: 100%;
+}
+
+.Post-Content ul {
+    padding-inline-start: 20px;
 }
 
 @media (max-width: 1200px) {

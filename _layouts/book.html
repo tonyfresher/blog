@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="PostContainer">
+    {% include site-title.html %}
+
+    <main>
+        <article class="Post">
+            <div class="Post-Info">
+                {% include date-string.html date=page.date %}
+                {% include read-time.html content=content %}
+            </div>
+
+            <h1 class="Post-Title">{{ page.title }}</h1>
+            {% if page.description %}
+                <div class="Post-Description">{{ page.description }}</div>
+            {% endif %}
+
+            <div class="BookPreview">
+                {% capture covers_url %}{{ site.baseurl }}/assets/books/{% endcapture %}
+                {% if page.cover %}
+                    <img class="BookPreview-Cover" src="{{ covers_url | append: page.cover }}" alt="Обложка">
+                {% endif %}
+                <div class="BookPreview-Meta">
+                    <span class="BookPreview-Name">{{ page.name_en }}</span>
+                    <span>{{ page.author }}</span>
+                    <span>{{ page.year }}</span>
+                </div>
+            </div>
+            <div class="Post-Content">
+                {{ content }}
+            </div>
+        </article>
+    </main>
+</div>
