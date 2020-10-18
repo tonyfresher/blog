@@ -18,8 +18,8 @@ layout: default
 
             <div class="BookPreview">
                 {% capture covers_url %}{{ site.baseurl }}/assets/books/{% endcapture %}
-                {% if page.cover %}
-                    <img class="BookPreview-Cover" src="{{ covers_url | append: page.cover }}" alt="Обложка">
+                {% if page.image %}
+                    <img class="BookPreview-Cover" src="{{ covers_url | append: page.image }}" alt="Обложка">
                 {% endif %}
                 <div class="BookPreview-Meta">
                     <span class="BookPreview-Name">{{ page.name_en }}</span>
