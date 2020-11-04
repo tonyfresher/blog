@@ -122,18 +122,22 @@
         writing-mode: unset;
     }
 
-    .BookSpine-Author {
-        margin-top: 4px;
-
-        max-width: inherit;
-        text-align: left;
+    .BookSpine:hover {
+        transform: none;
     }
 
     .BookSpine + .BookSpine {
         margin-top: 8px;
     }
 
-    .BookSpine:hover {
-        transform: none;
+    .BookSpine-Name_lang_en {
+        text-decoration: underline;
+    }
+
+    .BookSpine-Author {
+        margin-top: 4px;
+
+        max-width: inherit;
+        text-align: left;
     }
 }
