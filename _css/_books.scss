@@ -41,8 +41,8 @@
     transition: transform .1s ease-out;
 }
 
-.BookSpine[href]:hover {
-    transform: scale(1.1);
+.BookSpine:hover {
+    transform: scale(1.05) translateY(-8px);
 }
 
 .BookSpine-Header {
@@ -133,11 +133,7 @@
         margin-top: 6px;
     }
 
-    .BookSpine[href] .BookSpine-Name_lang_en {
-        text-decoration: underline;
-    }
-
-    .BookSpine[href]:hover {
+    .BookSpine:hover {
         transform: none;
     }
 }
