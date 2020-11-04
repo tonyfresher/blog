@@ -1,5 +1,5 @@
 .RootContainer {
-    padding: 100px;
+    padding: var(--page-padding-y) var(--page-padding-x);
 
     min-height: 100vh;
     box-sizing: border-box;
@@ -26,10 +26,4 @@
 
     width: max-content;
     height: max-content;
-}
-
-@media (max-width: 540px) {
-    .RootContainer {
-        padding: 40px 20px;
-    }
 }

@@ -1,4 +1,7 @@
 :root {
+    --page-padding-x: 100px;
+    --page-padding-y: 100px;
+
     --text-font-family: 'PT Root UI VF', 'Helvetica', sans-serif;
     --text-font-size: 20px;
     --text-line-height: 26px;
@@ -25,5 +28,12 @@
     :root {
         --h1-font-size: 28px;
         --h2-font-size: 28px;
+    }
+}
+
+@media (max-width: 540px) {
+    :root {
+        --page-padding-x: 20px;
+        --page-padding-y: 40px;
     }
 }

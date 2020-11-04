@@ -7,7 +7,7 @@
 }
 
 .BookSection-Name {
-    margin: 0 0 24px;
+    margin: 0 0 16px;
 
     font-size: var(--h2-font-size);
     line-height: var(--h2-line-height);
@@ -15,38 +15,53 @@
     color: var(--inactive-color);
 }
 
+.BookSection-Books {
+    display: flex;
+    flex-flow: row wrap;
+
+    width: 100%;
+}
+
 .BookSpine {
     display: flex;
     align-items: center;
 
-    max-width: 800px;
+    min-width: 52px;
+    height: 400px;
 
-    padding: 32px 60px;
+    margin: 8px 8px 0 0;
+    padding: 32px 16px;
+
+    writing-mode: vertical-rl;
 
     color: inherit;
 
     text-decoration: none;
 
-    transition: transform .2s ease-out;
-}
-
-.BookSpine + .BookSpine {
-    margin-top: 8px;
+    transition: transform .1s ease-out;
 }
 
 .BookSpine[href]:hover {
-    transform: translateX(40px);
+    transform: scale(1.1);
 }
 
 .BookSpine-Header {
-    flex: 1;
+    flex: 2;
 
     margin: 0;
+
+    font-size: inherit;
 }
 
 .BookSpine-Author {
+    flex: 1;
+
+    margin-top: 8px;
+
     max-width: 240px;
     text-align: end;
+
+    font-size: 16px;
 }
 
 .BookSpine-Name_lang_ru {
@@ -78,22 +93,6 @@
     color: var(--foreground-color);
 }
 
-@media (max-width: 960px) {
-    .BookSpine {
-        flex-direction: column;
-        align-items: flex-start;
-
-        padding: 12px 20px;
-    }
-
-    .BookSpine-Author {
-        margin-top: 4px;
-
-        max-width: inherit;
-        text-align: left;
-    }
-}
-
 @media (max-width: 540px) {
     .BookShelf {
         margin-top: 40px;
@@ -102,6 +101,10 @@
     .BookSection + .BookSection {
         margin-top: 32px;
     }
+
+    .BookSection-Books {
+        flex-direction: column;
+    }
     
     .BookSection-Name {
         margin: 0 0 16px;
@@ -109,8 +112,21 @@
 
     .BookSpine {
         flex-direction: column;
+        align-items: flex-start;
 
-        margin: 0 -20px;
+        margin: 0 calc(var(--page-padding-x) * -1);
+        padding: 12px 20px;
+
+        height: auto;
+
+        writing-mode: unset;
+    }
+
+    .BookSpine-Author {
+        margin-top: 4px;
+
+        max-width: inherit;
+        text-align: left;
     }
 
     .BookSpine + .BookSpine {
