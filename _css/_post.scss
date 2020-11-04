@@ -81,7 +81,11 @@
 }
 
 .Post-Content ul {
-    padding-inline-start: 20px;
+    padding-left: 20px;
+}
+
+.Post-Content p + ul {
+    margin-top: -0.5em;
 }
 
 @media (max-width: 1200px) {
