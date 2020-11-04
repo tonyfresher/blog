@@ -1,0 +1,36 @@
+---
+title: Книжная полка
+layout: default
+theme: dark
+---
+{% include site-title.html %}
+
+<main>
+    <div class="BookShelf">
+        {% assign groups = site.books | group_by_exp: "book", "book.date | date: '%Y'" | reverse %}
+        {% for group in groups %}
+            <section class="BookSection">
+                <h2 class="BookSection-Name" id="{{ group.name }}">
+                    {{group.name}}
+                </h2>
+                {% assign books = group.items | reverse %}
+                {% for book in books %}
+                    <a
+                        class="BookSpine"
+                        {% assign book_content = book.content | strip_newlines %}
+                        {% if book_content != "" %}
+                            href="{{ book.url | relative_url }}"
+                        {% endif %}
+                        style="background: {{ book.background_color }}; color: {{ book.foreground_color }}"
+                    >
+                        <h3 class="BookSpine-Header">
+                            <span class="BookSpine-Name BookSpine-Name_lang_en">{{ book.name_en }}</span>
+                            <span class="Book-Name BookSpine-Name_lang_ru">{{ book.name_ru }}</span>
+                        </h3>
+                        <span class="BookSpine-Author">{{ book.author }}</span>
+                    </a>
+                {% endfor %}
+            </section>
+        {% endfor %}
+    </div>
+</main>
