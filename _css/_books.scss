@@ -130,14 +130,12 @@
         margin-top: 8px;
     }
 
-    .BookSpine-Name_lang_en {
-        text-decoration: underline;
-    }
-
     .BookSpine-Author {
         margin-top: 4px;
 
         max-width: inherit;
         text-align: left;
+
+        opacity: 0.5;
     }
 }
