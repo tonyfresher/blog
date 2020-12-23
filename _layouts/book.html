@@ -22,7 +22,13 @@ layout: default
                     <img class="BookPreview-Cover" src="{{ covers_url | append: page.image }}" alt="Обложка">
                 {% endif %}
                 <div class="BookPreview-Meta">
-                    <span class="BookPreview-Name">{{ page.name_en }}</span>
+                    <span class="BookPreview-Name">
+                        {% if page.name_en %}
+                            {{ page.name_en }}
+                        {% else %}
+                            {{ page.name_ru }}
+                        {% endif %}
+                    </span>
                     <span>{{ page.author }}</span>
                     <span>{{ page.year }}</span>
                 </div>

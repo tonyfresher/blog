@@ -1,2 +1,2 @@
 {% assign words = include.content | number_of_words %}
-<span>{{ words | divided_by: 180 }} мин</span>
+<span>{{ words | divided_by: 180 | at_least: 1 }} мин</span>

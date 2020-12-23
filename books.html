@@ -20,12 +20,14 @@ theme: dark
                             class="BookSpine"
                             {% assign book_content = book.content | strip_newlines %}
                             {% if book_content != "" %}
-                                href="{{ book.url | relative_url }}"
+                                href="{{ x.url | relative_url }}"
                             {% endif %}
                             style="background: {{ book.background_color }}; color: {{ book.foreground_color }}"
                         >
                             <h3 class="BookSpine-Header">
-                                <span class="BookSpine-Name BookSpine-Name_lang_en">{{ book.name_en }}</span>
+                                {% if book.name_en %}
+                                    <span class="BookSpine-Name BookSpine-Name_lang_en">{{ book.name_en }}</span>
+                                {% endif %}
                                 <span class="Book-Name BookSpine-Name_lang_ru">{{ book.name_ru }}</span>
                             </h3>
                             <span class="BookSpine-Author">{{ book.author }}</span>
