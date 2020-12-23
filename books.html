@@ -20,7 +20,7 @@ theme: dark
                             class="BookSpine"
                             {% assign book_content = book.content | strip_newlines %}
                             {% if book_content != "" %}
-                                href="{{ x.url | relative_url }}"
+                                href="{{ book.url | relative_url }}"
                             {% endif %}
                             style="background: {{ book.background_color }}; color: {{ book.foreground_color }}"
                         >
