@@ -1,6 +1,4 @@
 title: Антон Фрешер
-url: https://tonyfresher.com
-baseurl: /blog
 permalink: /:categories/:title
 
 collections:

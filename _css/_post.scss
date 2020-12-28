@@ -103,8 +103,9 @@
         grid-template-columns: auto;
     }
 
-    .Post {
-        margin-top: 72px;
+    .Post,
+    .Post-Content {
+        margin-top: 60px;
     }
 
     .Post-Info {
@@ -119,9 +120,5 @@
 
     .Post-Title {
         margin-top: 0;
-    }
-
-    .Post-Content {
-        margin-top: 56px;
     }
 }
