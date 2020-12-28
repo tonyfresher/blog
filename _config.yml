@@ -1,7 +1,5 @@
 title: Антон Фрешер
-description: Блог
-url: https://tonyfresher.com
-baseurl: /blog
+repository: tonyfresher/blog
 permalink: /:categories/:title
 
 collections:
